@@ -27,6 +27,7 @@
 	text-align:center;
 	float:left;
 	position: absolute;
+	visibility: hidden;
 }
 
 .QuickContentSlider-button-left-ie{
@@ -53,6 +54,7 @@
 	float:left;
 	position: absolute;
 	top: -45px;
+	visibility: hidden;
 }
 
 .QuickContentSlider-button-right-ie{
@@ -74,6 +76,11 @@
 	box-shadow: 0px 0px 5px #444444;
 	-moz-box-shadow: 0px 0px 5px #444444;
 	-webkit-box-shadow: 0px 0px 5px #444444;
+	visibility: hidden;
+}
+
+.QuickContentSlider-content-left  a, .QuickContentSlider-content-left img{
+	max-width: 300px;
 }
 
 .QuickContentSlider-content-right{
@@ -86,6 +93,11 @@
 	box-shadow: 0px 0px 5px #444444;
 	-moz-box-shadow: 0px 0px 5px #444444;
 	-webkit-box-shadow: 0px 0px 5px #444444;
+	visibility: hidden;
+}
+
+.QuickContentSlider-content-right  a, .QuickContentSlider-content-right img{
+	max-width: 300px;
 }
 
 .QuickContentSlider-content a {
