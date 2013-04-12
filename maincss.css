@@ -8,6 +8,14 @@
 	right: -470px;
 } 
 
+.QuickContentSlider-button-right:hover,
+.QuickContentSlider-button-left:hover,
+.QuickContentSlider-button-left-ie,
+.QuickContentSlider-button-right-ie {
+cursor: pointer;
+cursor: hand;
+}
+
 .QuickContentSlider-button-left{
 	transform:rotate(90deg);
 	transform-origin:100% 100%;
