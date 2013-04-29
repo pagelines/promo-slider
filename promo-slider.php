@@ -1,4 +1,5 @@
 <?php
+
 /*
 Plugin Name: Promo Slider
 Description: Promo Slider adds a button on right or left of the page that slides out to reveal a promo when you roll over it! It is a vertical element that shows on the left or right hand side of your site!
