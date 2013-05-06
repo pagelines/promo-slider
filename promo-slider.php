@@ -12,7 +12,7 @@ Pagelines: true
 
 define('CURR_PLUG_IN_URL', get_option('siteurl').'/wp-content/plugins/'.dirname(plugin_basename(__FILE__)));
 
-class PageLinesSlider{
+class PLPromoSlider{
 
 	function __construct() {
 		$this->icon = CURR_PLUG_IN_URL . '/icon.png';
@@ -23,7 +23,7 @@ class PageLinesSlider{
 	}
 	
 	function PromoSlider_install() {
-		$boj = new PageLinesSlider;
+		$boj = new PLPromoSlider;
 		$boj->PromoSlider_create();
 		$content_box = 'Go to settings in Promo Slider plugin to add your own text.';
 		global $wpdb;
@@ -55,7 +55,7 @@ class PageLinesSlider{
 	}
 	
 	function PromoSlider_plugin_admin_menu() {
-		add_menu_page('Promo Slider', 'Promo Slider', 'publish_posts', 'promoslider', array('PageLinesSlider','PromoSlider_main'), CURR_PLUG_IN_URL.'/icon.png');
+		add_menu_page('Promo Slider', 'Promo Slider', 'publish_posts', 'promoslider', array('PLPromoSlider','PromoSlider_main'), CURR_PLUG_IN_URL.'/icon.png');
 	}
 
 	function PromoSlider_main() {
@@ -356,7 +356,7 @@ class PageLinesSlider{
 	}
 }
 
-new PageLinesSlider;
+new PLPromoSlider;
 ?>
 =======
 <?php
@@ -368,7 +368,7 @@ Author: Catapult Impact
 Pagelines: true
 */
 
-class PageLinesSlider{
+class PLPromoSlider{
 
 	function __construct() {
 		$this->icon = plugins_url( 'icon.png', __FILE__ );
@@ -380,7 +380,7 @@ class PageLinesSlider{
 	}
 	
 	function PromoSlider_install() {
-		$boj = new PageLinesSlider;
+		$boj = new PLPromoSlider;
 		$boj->PromoSlider_create();
 		$content_box = 'Go to settings in Promo Slider plugin to add your own text.';
 		global $wpdb;
@@ -412,7 +412,7 @@ class PageLinesSlider{
 	}
 	
 	function PromoSlider_plugin_admin_menu() {
-		add_menu_page('Promo Slider', 'Promo Slider', 'publish_posts', 'promoslider', array('PageLinesSlider','PromoSlider_main'), $this->icon);
+		add_menu_page('Promo Slider', 'Promo Slider', 'publish_posts', 'promoslider', array('PLPromoSlider','PromoSlider_main'), $this->icon);
 	}
 	
 	function promo_css() {
@@ -717,5 +717,5 @@ class PageLinesSlider{
 	}
 }
 
-new PageLinesSlider;
+new PLPromoSlider;
 ?>
